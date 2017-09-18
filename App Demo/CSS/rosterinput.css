@@ -1,0 +1,22 @@
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    background-color: #684B3C;
+    font-family: Raleway;
+}
+
+.nav li {
+	display: inline;
+}
+
+li a {
+	color: white;
+	text-align: center;
+	padding: 1% 5%;
+	text-decoration: none;
+}
+
+.rost {
+	display: block;
+}
