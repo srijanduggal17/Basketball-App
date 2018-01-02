@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="Libraries/p5.min.js"></script>
+        <script src="Libraries/jquery.js"></script>
+        <script src="JS/playinput.js"></script>
+        <link href="CSS/playinput.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <button id = "initialdatabutton" onclick="addInitialData()">Add Initial Data</button>
+        <button id = "finaldatabutton" onclick="addFinalData()">Add Final Position Data</button>
+        <button id = "successprobabilitybutton" onclick="calcProbSuccess()">Calculate Probability of Success</button>
+        <button id = "weakestlinkbutton" onclick="weakestLink()">What is the Weakest Link?</button>
+        <button id = "alternativeplayerbutton" onclick="alternativePlayer()">Who is the alternative player?</button>
+
+        <h2>Change players</h2>
+        <p>Click on the button to open dropdown and change players</p>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a onclick="selectMeyer()">Meyer</a>
+                <a onclick="selectBo()">Bo</a>
+                <a onclick="selectFinn()">Finn</a>
+                <a onclick="selectCJ()">CJ</a>
+                <a onclick="selectRiley()">Riley</a>
+                <a onclick="selectJP()">JP</a>
+                <a onclick="selectZachary()">Zachary</a>
+                <a onclick="selectCasey()">Casey</a>
+                <a onclick="selectMurray()">Murray</a>
+                <a onclick="selectJames()">James</a>
+            </div>
+        </div>
+    </body>
+</html>
