@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Roster Input</title>
+    <script src="jquery.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  
+  <body>
+    
+    <p>Player:</p>
+    <input type="text" id="player" value="">
+    <button onclick="getPlayer()">Add Player</button>
+
+    <p></p>
+
+    <input type="text" id="rplayer" value="">
+    <button onclick="removePlayer()">Remove Player</button>
+
+    <h3>Roster:</h3>
+
+    <ul id="currentroster">
+    </ul>
+
+    <button id="datastructure" onclick="adjustDataStructures()">Save Changes</button>
+
+  </body>
+</html>
